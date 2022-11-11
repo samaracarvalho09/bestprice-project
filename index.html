@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BestPrice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@300;400;500&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/worldwide.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+
+      <div id="loginModal" class="modalWrapper">
+        <div id="contentLoginModal">
+          <div class="containerCloseBtn" id="buttonCloseLoginModal">
+              <img src="./assets/Close.svg" />
+          </div>
+          <div id="loginModalTitle">
+            <span class="modalTitle">Login</span>
+            <span class="styleSpanFormLoginStart">
+              Welcome onboard with us!
+            </span>
+          </div>
+          <form id="LoginForm">
+            <label class="label" for="usernameLogin">Username</label>
+            <input
+              class="input"
+              type="text"
+              name="usernameLogin"
+              id="usernameLogin"
+              placeholder="Enter your username"
+              required
+            />
+            <label class="label" for="passwordLogin">Password</label>
+            <input
+              class="input"
+              type="password"
+              name="passwordLogin"
+              id="passwordLogin"
+              placeholder="Enter your password"
+              required
+            />
+          </form>
+          <div id="loginFormLinks">
+            <input
+              id="forgotPasswordLink"
+              type="button"
+              value="Forgot Password?"
+            />
+            <input class="styleButton" type="button" value="Login" />
+            <div id="registerNewLogin">
+              <span>New to Login?</span>
+              <input
+                id="styleRegisterHere"
+                type="button"
+                value="Register Here"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="signUpModal" class="modalWrapper">
+        <div id="contentSignUpModal">
+          <div class="containerCloseBtn" id="buttonCloseSignUpModal">
+              <img src="./assets/Close.svg" />
+          </div>
+          <div>
+            <form id="signUpForm">
+              <legend class="modalTitle">Create account</legend>
+              <label class="label" for="text">Username</label>
+              <input
+                class="input"
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Username"
+                required
+              />
+              <label class="label" for="email">Email</label>
+              <input
+                class="input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="youremail@edu.com"
+                required
+              />
+              <label
+                class="label"
+                for="password"
+                minlength="8"
+                >Password</label
+              >
+              <input
+                class="input"
+                type="password"
+                name="password"
+                id="password"
+                minlength="8"
+                placeholder="Password"
+                required
+              />
+              <label
+              class="label"
+              for="password"
+              minlength="8"
+              placeholder="Create an 8 digit password"
+              >Password</label
+            >
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="password"
+              minlength="8"
+              placeholder="Confirme your password"
+              required
+            />
+              <div id="ckeckboxContainer">
+                <input type="checkbox" name="terms" id="terms" required />
+                <span for="terms" id="styleTextCheckboxTerms"
+                  >By creating an account, you agree to the Terms of Service and
+                  Conditions, and Privacy Policy</span
+                >
+              </div>
+              <div id="buttonCreateAccount">
+                <button class="styleButton" type="submit">
+                  Create account
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <header class="header">
+        <div id="logo">BestPrice</div>
+        <div class="WrappermenuLinks">
+          <ul id="socialLinks">
+            <li>
+              <a target="_blank" href="#home">Home</a>
+            </li>
+            <li>
+              <a target="_blank" href="#about">About</a>
+            </li>
+            <li>
+              <a target="_blank" href="#destination">Destination</a>
+            </li>
+            <li>
+              <a target="_blank" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <input
+          class="button"
+          id="buttonOpenLoginModal"
+          type="button"
+          value="Log in"
+        />
+        <input
+          class="button"
+          id="buttonOpenSignUpModal"
+          type="button"
+          value="Sign up"
+        />
+      </header>
+
+      <section id="section">
+        <div class="sectionLeftWelcome">
+          <h1 id="sectionTitle"
+            >Here we have the best price for your trip</h1
+          >
+          <span id="subtitleTitle">Stop wasting time!</span>
+        </div>
+        <div id="sectionImage">
+          <img id="worldImage" src="./assets/undraw_world_re_768g.svg" />
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div>
+          <span id="footerText">
+            Copyright, BestPrice 2022. All rights reserved.
+          </span>
+        </div>
+      </footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
